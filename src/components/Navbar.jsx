@@ -8,16 +8,16 @@ const Navbar = () => {
         background: isActive ? 'black' : 'none',
     })
     const navItems = <>
-    <li><NavLink to={'/'} style={navStyle} className={'rounded-full min-h-10'}>Home</NavLink></li>
-    <li><NavLink to={'/categories'} style={navStyle} className={'rounded-full min-h-10'}>Categories</NavLink></li>
-    <li><NavLink to={'/features'} style={navStyle} className={'rounded-full min-h-10'}>Features</NavLink></li>
-    <li><NavLink to={'/interviewers'} style={navStyle} className={'rounded-full min-h-10'}>Interviewers</NavLink></li>
+    <li><NavLink to={'/'} style={navStyle} className={'rounded-full lg:min-h-10 py-2'}>Home</NavLink></li>
+    <li><NavLink to={'/categories'} style={navStyle} className={'rounded-full lg:min-h-10 py-2'}>Categories</NavLink></li>
+    <li><NavLink to={'/features'} style={navStyle} className={'rounded-full lg:min-h-10 py-2'}>Features</NavLink></li>
+    <li><NavLink to={'/interviewers'} style={navStyle} className={'rounded-full lg:min-h-10 py-2'}>Interviewers</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                    <div tabIndex={0} role="button" className="btn btn-md mr-2 btn-ghost lg:hidden">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"

@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 const HomeLayout = () => {
     return (
         <>
-            <header className="w-11/12 max-w-screen-xl mx-auto">
+            <header className="w-full md:w-11/12 max-w-screen-xl mx-auto">
                 <Navbar></Navbar>
             </header>
             <main className="w-11/12 max-w-screen-xl mx-auto">
