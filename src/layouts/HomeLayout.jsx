@@ -2,14 +2,13 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 
-const Home = () => {
+const HomeLayout = () => {
     return (
         <>
             <header className="w-11/12 max-w-screen-xl mx-auto">
                 <Navbar></Navbar>
             </header>
-            <main>
-                <h1 className="text-center">Home Page</h1>
+            <main className="w-11/12 max-w-screen-xl mx-auto">
                 <Outlet></Outlet>
             </main>
             <footer>
@@ -19,4 +18,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default HomeLayout;
