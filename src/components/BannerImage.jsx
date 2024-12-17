@@ -2,7 +2,7 @@ import React from 'react';
 
 const BannerImage = () => {
     return (
-        <div className='w-10/12 mx-auto mt-28 mb-10'>
+        <div className='w-full md:w-10/12 mx-auto mt-28 mb-10'>
             <div className='grid md:grid-cols-10 gap-2 text-center'>
                 <div className='col-span-10 md:col-span-5 bg-slate-950 rounded-lg'>
                     <img src="src\assets\Banner image.jpg" alt="" className='h-full rounded-lg' />
