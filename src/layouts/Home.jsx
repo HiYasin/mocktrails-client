@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 
@@ -9,6 +10,7 @@ const Home = () => {
             </header>
             <main>
                 <h1 className="text-center">Home Page</h1>
+                <Outlet></Outlet>
             </main>
             <footer>
                 <h1 className="text-center">This is Footer</h1>
