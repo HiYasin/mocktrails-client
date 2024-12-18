@@ -45,7 +45,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link to={'/register'} className="btn btn-sm bg-green-500 rounded-full min-h-10">Get Start</Link>
+                <Link to={'/register'} className="btn btn-sm bg-green-500 rounded-full min-h-10">Get Started</Link>
             </div>
         </div>
     );
