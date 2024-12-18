@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const navStyle = ({ isActive }) => ({
@@ -45,7 +45,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <button className="btn btn-sm bg-green-500 rounded-full min-h-10">Sign up</button>
+                <Link to={'/register'} className="btn btn-sm bg-green-500 rounded-full min-h-10">Get Start</Link>
             </div>
         </div>
     );
