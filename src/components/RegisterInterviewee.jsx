@@ -4,51 +4,51 @@ import { FcGoogle } from "react-icons/fc";
 
 const RegisterInterviewee = () => {
     return (
-        <div className='loginForm'>
+        <div className='loginForm text-sm'>
             <form>
-                <div className="md:flex gap-4">
+                <div className="md:flex gap-2">
                     <div className="form-control w-full">
                         <label className="label">
                             <span className="label-text">First Name</span>
                         </label>
-                        <input type="text" name="firstName" className="input input-bordered flex" required />
+                        <input type="text" name="firstName" className="input input-sm input-bordered" required />
                     </div>
                     <div className="form-control w-full">
                         <label className="label">
                             <span className="label-text">Last Name</span>
                         </label>
-                        <input type="text" name="lastName" className="input input-bordered flex" required />
+                        <input type="text" name="lastName" className="input input-sm input-bordered" required />
                     </div>
                 </div>
-                <div className="md:flex gap-4">
+                <div className="md:flex gap-2">
                     <div className="form-control w-full">
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
-                        <input type="email" name="email" className="input input-bordered" required />
+                        <input type="email" name="email" className="input input-sm input-bordered" required />
                     </div>
                     <div className="form-control w-full">
                         <label className="label">
                             <span className="label-text">Password</span>
                         </label>
-                        <input type="password" name="password" className="input input-bordered" required />
+                        <input type="password" name="password" className="input input-sm input-bordered" required />
                     </div>
                 </div>
-                <div className="md:flex gap-4">
+                <div className="md:flex gap-2">
                     <div className="form-control w-full">
                         <label className="label">
                             <span className="label-text">Country</span>
                         </label>
-                        <input type="text" name="country" className="input input-bordered" required />
+                        <input type="text" name="country" className="input input-sm input-bordered" required />
                     </div>
                     <div className="form-control w-full">
                         <label className="label">
                             <span className="label-text">Time Zone</span>
                         </label>
-                        <input type="text" name="timeZone" className="input input-bordered" required />
+                        <input type="text" name="timeZone" className="input input-sm input-bordered" required />
                     </div>
                 </div>
-                <div className="flex pt-5">
+                <div className="flex items-center pt-5">
                     <input type="checkbox" className="checkbox mr-4" />
                     <span className="label-text">I agree with the Terms and Conditions and Privacy Policy of this site. </span>
                 </div>
