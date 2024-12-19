@@ -12,7 +12,7 @@ const Mentors = () => {
           Explore the top interviewers from each category and elevate your
           success rate more
         </p>
-        <button className="btn btn-sm bg-green-500 rounded-xl w-fit min-h-10">
+        <button className="btn btn-sm text-white bg-custom-gradient rounded-xl w-fit min-h-10">
           See all
         </button>
       </section>

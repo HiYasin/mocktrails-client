@@ -4,7 +4,8 @@ import OfferingsGrid from "../components/OfferingsGrid";
 import Review from "../components/Review";
 import Search from "../components/Search";
 import Mentors from "../components/Mentors";
-import Categories from "../components/categories";
+import CategoriesGrid from "../components/CategoriesGrid";
+
 
 const Home = () => {
     return (
@@ -13,7 +14,7 @@ const Home = () => {
             <BannerImage></BannerImage>
             <Search></Search>
             <OfferingsGrid></OfferingsGrid>
-            <Categories></Categories>
+            <CategoriesGrid></CategoriesGrid>
             <Mentors></Mentors>
             <Review></Review>
         </div>
