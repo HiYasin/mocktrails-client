@@ -28,7 +28,7 @@ const Search = () => {
                     <option>Maggie</option>
                 </select>
                 <div className='w-full col-span-2 flex justify-center items-center md:col-span-2'>
-                    <button className="btn btn-sm bg-green-500 rounded-xl min-h-10 text-xs">Search</button>
+                    <button className="btn btn-sm text-white bg-custom-gradient rounded-xl min-h-10 text-xs">Search</button>
                 </div>
             </div>
         </div>
