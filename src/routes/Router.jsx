@@ -5,6 +5,9 @@ import PageNotFound from "../pages/PageNotFound";
 import Home from "../pages/Home";
 import Register from "../components/Register";
 import Login from "../components/Login";
+import CategoriesGrid from "../components/categories";
+import OfferingsGrid from "../components/OfferingsGrid";
+import Mentors from "../components/Mentors";
 
 const Router = createBrowserRouter([
     {
@@ -17,15 +20,15 @@ const Router = createBrowserRouter([
             },
             {
                 path: "/categories",
-                element: <App></App>
+                element: <CategoriesGrid></CategoriesGrid>
             },
             {
                 path: "/features",
-                element: <App></App>
+                element: <OfferingsGrid></OfferingsGrid>
             },
             {
                 path: "/interviewers",
-                element: <App></App>
+                element: <Mentors></Mentors>
             },
             {
                 path: "/register",
