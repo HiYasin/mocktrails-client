@@ -55,9 +55,9 @@ const CategoriesGrid = () => {
   return (
     <main className="container w-full md:w-10/12 my-24 mx-auto">
       <div className="grid grid-cols-12 w-full gap-3 justify-center items-center">
-        <div className="col-span-12 md:col-span-3 text-center">
-          <h3 className="font-medium text-2xl md:text-4xl text-center"> Serach By Categories</h3>
-          <p className="font-medium text-gray-500 my-3">Find. <br></br>BOOK.<br></br>GET BETTER.</p>
+        <div className="col-span-12 md:col-span-3 text-center md:text-left">
+          <h3 className="font-medium text-2xl md:text-2xl lg:text-4xl "> Serach By Categories</h3>
+          <p className="font-medium text-sm text-gray-500 my-3">Find. <br></br>BOOK.<br></br>GET BETTER.</p>
           <button className="btn btn-xs bg-green-500 rounded-xl w-fit min-h-10">
           See all
         </button>
