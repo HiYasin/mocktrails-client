@@ -4,7 +4,8 @@ import OfferingsGrid from "../components/OfferingsGrid";
 import Review from "../components/Review";
 import Search from "../components/Search";
 import Mentors from "../components/Mentors";
-import CategoriesGrid from "../components/categories";
+import CategoriesGrid from "../components/CategoriesGrid";
+
 
 const Home = () => {
     return (

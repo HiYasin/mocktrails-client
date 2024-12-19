@@ -5,7 +5,7 @@ import PageNotFound from "../pages/PageNotFound";
 import Home from "../pages/Home";
 import Register from "../components/Register";
 import Login from "../components/Login";
-import CategoriesGrid from "../components/categories";
+import CategoriesGrid from "../components/CategoriesGrid";
 import OfferingsGrid from "../components/OfferingsGrid";
 import Mentors from "../components/Mentors";
 
