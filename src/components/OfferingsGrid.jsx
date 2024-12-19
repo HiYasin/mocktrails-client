@@ -75,7 +75,6 @@ const OfferingsGrid = () => {
             key={item.id}
             className="relative group w-full bg-white p-16 rounded-lg shadow hover:shadow-lg transition duration-300 overflow-hidden"
           >
-            {/* Default Content */}
             <div className="flex flex-col items-center text-center group-hover:opacity-0 group-hover:invisible transition-opacity duration-300">
               {item.icon}
               <h2 className="mt-2 text-lg font-semibold text-gray-800">{item.heading}</h2>
