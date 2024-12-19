@@ -14,7 +14,7 @@ const Navbar = () => {
     <li><NavLink to={'/interviewers'} style={navStyle} className={'rounded-full lg:min-h-10 py-2'}>Interviewers</NavLink></li>
     </>
     return (
-        <div className="navbar bg-base-100 w-full mx-auto mt-8">
+        <div className="navbar bg-base-100 w-full mx-auto md:w-11/12 max-w-screen-xl mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-md mr-2 btn-ghost lg:hidden">

@@ -73,7 +73,7 @@ const OfferingsGrid = () => {
         {offerings.map((item) => (
           <div
             key={item.id}
-            className="relative group w-full bg-white p-16 border-r-2 border-b-2 border-gray-200 hover: transition duration-300 overflow-hidden"
+            className="relative group w-full bg-white p-16 border-r-2 border-b-2 border-gray-200 hover: transition duration-300 overflow-hidden cursor-pointer"
           >
             <div className="flex flex-col items-center text-center group-hover:opacity-0 group-hover:invisible transition-opacity duration-300">
               {item.icon}
