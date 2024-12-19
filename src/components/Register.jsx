@@ -12,7 +12,7 @@ const Register = () => {
     const [tab, setTab] = useState('interviewee');
     const tabStyle = ' rounded-full lg:min-h-10 py-2 px-4'
     return (
-        <div className='border max-w-screen-xl mx-auto rounded-2xl my-20 shadow-xl'>
+        <div className='border max-w-screen-xl mx-auto rounded-2xl my-36 shadow-xl'>
             <div className='grid grid-cols-2 '>
                 <div className='col-span-1 m-2 rounded-2xl hidden lg:block' style={GradientStyle()}>
                     <div className='hero-content flex-col p-10 text-center text-white'>

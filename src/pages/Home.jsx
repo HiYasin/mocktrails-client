@@ -5,6 +5,7 @@ import Search from "../components/Search";
 import Mentors from "../components/Mentors";
 import CategoriesGrid from "../components/CategoriesGrid";
 import Testimonials from "../components/Testimonials";
+import ExploreMentor from "../components/ExploreMentor";
 
 
 
@@ -14,9 +15,9 @@ const Home = () => {
             <Banner></Banner>
             <BannerImage></BannerImage>
             <Search></Search>
+            <Mentors></Mentors>
             <OfferingsGrid></OfferingsGrid>
             <CategoriesGrid></CategoriesGrid>
-            <Mentors></Mentors>
             <Testimonials></Testimonials>
         </div>
     );

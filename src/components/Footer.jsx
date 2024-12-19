@@ -17,25 +17,25 @@ const Footer = () => {
                     <div className='col-span-4'>
                         <h2 className='text-md md:text-lg lg:text-xl py-2 font-semibold text-gray-700'>Plateform</h2>
                         <ul className='text-sm md:text-md text-gray-600 flex flex-col gap-2'>
-                            <li className='hover:underline hover:font-semibold cursor-pointer'>Interviewee</li>
-                            <li className='hover:underline hover:font-semibold cursor-pointer'>Book a session</li>
-                            <li className='hover:underline hover:font-semibold cursor-pointer'>Become mentor</li>
-                            <li className='hover:underline hover:font-semibold cursor-pointer'>Testimonial</li>
+                            <li className='hover:underline hover:font-semibol cursor-pointer'>Interviewee</li>
+                            <li className='hover:underline hover:font-semibol cursor-pointer'>Book a session</li>
+                            <li className='hover:underline hover:font-semibol cursor-pointer'>Become mentor</li>
+                            <li className='hover:underline hover:font-semibol cursor-pointer'>Testimonial</li>
                         </ul>
                     </div>
                     <div className='col-span-4 '>
                         <h2 className='text-md md:text-lg lg:text-xl font-semibold py-2 text-gray-700'>Company</h2>
                         <ul className='text-sm md:text-md flex flex-col gap-2 text-gray-600'>
-                            <li className='hover:underline hover:font-semibold cursor-pointer'>About</li>
-                            <li className='hover:underline hover:font-semibold cursor-pointer'>Privacy & Policy</li>
-                            <li className='hover:underline hover:font-semibold cursor-pointer'>Terms of use</li>
+                            <li className='hover:underline hover:font-semibol cursor-pointer'>About</li>
+                            <li className='hover:underline hover:font-semibol cursor-pointer'>Privacy & Policy</li>
+                            <li className='hover:underline hover:font-semibol cursor-pointer'>Terms of use</li>
                         </ul>
                     </div>
                     <div className='col-span-4'>
                         <h2 className='text-md md:text-lg lg:text-xl py-2 font-semibold text-gray-700'>Support</h2>
                         <ul className='text-sm md:text-md flex flex-col gap-2 text-gray-600'>
-                            <li className='hover:underline hover:font-semibold cursor-pointer'>FAQ</li>
-                            <li className='hover:underline hover:font-semibold cursor-pointer'>Contact</li>
+                            <li className='hover:underline hover:font-semibol cursor-pointer'>FAQ</li>
+                            <li className='hover:underline hover:font-semibol cursor-pointer'>Contact</li>
                         </ul>
                     </div>
                 </div>

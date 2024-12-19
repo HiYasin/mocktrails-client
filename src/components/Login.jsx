@@ -1,10 +1,26 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { FcGoogle } from "react-icons/fc";
+import { AuthContext } from '../context/AuthProvider';
 
 const Login = () => {
+    const navigate = useNavigate();
+    const { signInUser} = useContext(AuthContext);
+    const handleSubmit = event => {
+        event.preventDefault();
+        // const form = event.target;
+        const email = event.target.email.value;
+        const password = event.target.password.value;
+        const user = { email, password };
+        signInUser(email, password)
+            .then(result => {
+                    //console.log(result.json());
+                    navigate('/dashboard');
+            })
+            .then(err => console.log(err));
+    }
     return (
-        <div className='border max-w-screen-xl mx-auto rounded-2xl my-20 shadow-xl'>
+        <div className='border max-w-screen-xl mx-auto rounded-2xl my-36 shadow-xl'>
             <div className='grid grid-cols-2  p-10'>
                 <div className=''>
 
@@ -13,7 +29,7 @@ const Login = () => {
                     <h2 className='text-3xl font-bold text-center'>Sign In</h2>
                     <p className='text-lg font-semibold text-center py-3'>Enter your email and personal details to create your account</p>
                     <div>
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
@@ -39,9 +55,9 @@ const Login = () => {
                     </div>
                     <div>
                         <div>
-                            <div class="inline-flex items-center justify-center w-full relative">
-                                <hr class="w-full h-px bg-gray-500 border-0" />
-                                <span class="absolute px-3 font-medium text-gray-900 -translate-x-1/4 bg-white ">OR</span>
+                            <div className="inline-flex items-center justify-center w-full relative">
+                                <hr className="w-full h-px bg-gray-500 border-0" />
+                                <span className="absolute px-3 font-medium text-gray-900 -translate-x-1/4 bg-white ">OR</span>
                             </div>
                         </div>
                         <div className='flex justify-center pt-5 btn-primary '>
