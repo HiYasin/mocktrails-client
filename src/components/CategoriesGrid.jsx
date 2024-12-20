@@ -58,7 +58,7 @@ const CategoriesGrid = () => {
         <div className="col-span-12 md:col-span-3 text-center md:text-left">
           <h3 className="font-medium text-2xl md:text-2xl lg:text-4xl "> Serach By Categories</h3>
           <p className="font-medium text-sm text-gray-500 my-3">Find. <br></br>BOOK.<br></br>GET BETTER.</p>
-          <button className="btn btn-xs bg-custom-gradient text-white rounded-xl w-fit min-h-10">
+          <button className="btn btn-sm px-4 bg-slate-900 text-white rounded-xl w-fit min-h-10">
           See all
         </button>
         </div>

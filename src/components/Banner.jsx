@@ -24,7 +24,7 @@ const Banner = () => {
                 </div>
             </div>
             <div className='space-x-2'>
-                <button className={tab ? `bg-custom-gradient text-white btn btn-outline rounded-xl` : `btn btn-outline rounded-xl`} onClick={() => setTab(true)}>Interviewee</button>
+                <button className={tab ? `bg-slate-900 text-white btn btn-outline rounded-xl` : `btn btn-outline rounded-xl`} onClick={() => setTab(true)}>Interviewee</button>
                 <button className={tab ? `btn btn-outline rounded-xl` : `btn btn-outline rounded-xl text-white bg-black`} onClick={() => setTab(false)}>Interviewer</button>
             </div>
         </div>
