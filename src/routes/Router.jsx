@@ -3,6 +3,13 @@ import HomeLayout from "../layouts/HomeLayout";
 import App from "../App";
 import PageNotFound from "../pages/PageNotFound";
 import Home from "../pages/Home";
+import Register from "../components/Register";
+import Login from "../components/Login";
+import CategoriesGrid from "../components/CategoriesGrid";
+import OfferingsGrid from "../components/OfferingsGrid";
+import Mentors from "../components/Mentors";
+import Dashboard from "../pages/Dashboard";
+import ProtectedRouter from "./ProtectedRouter";
 
 const Router = createBrowserRouter([
     {
@@ -15,19 +22,31 @@ const Router = createBrowserRouter([
             },
             {
                 path: "/categories",
-                element: <App></App>
+                element: <CategoriesGrid></CategoriesGrid>
             },
             {
                 path: "/features",
-                element: <App></App>
+                element: <OfferingsGrid></OfferingsGrid>
             },
             {
                 path: "/interviewers",
-                element: <App></App>
+                element: <Mentors></Mentors>
             },
+            {
+                path: "/register",
+                element: <Register></Register>
+            },
+            {
+                path: "/login",
+                element: <Login></Login>
+            },
+            {
+                path: "/dashboard",
+                element: <ProtectedRouter><Dashboard></Dashboard></ProtectedRouter>
+            }
         ]
     },
-
+    
     {
         path: "*",
         element: <PageNotFound></PageNotFound>
