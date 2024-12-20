@@ -8,6 +8,8 @@ import Login from "../components/Login";
 import CategoriesGrid from "../components/CategoriesGrid";
 import OfferingsGrid from "../components/OfferingsGrid";
 import Mentors from "../components/Mentors";
+import Dashboard from "../pages/Dashboard";
+import ProtectedRouter from "./ProtectedRouter";
 
 const Router = createBrowserRouter([
     {
@@ -38,6 +40,10 @@ const Router = createBrowserRouter([
                 path: "/login",
                 element: <Login></Login>
             },
+            {
+                path: "/dashboard",
+                element: <ProtectedRouter><Dashboard></Dashboard></ProtectedRouter>
+            }
         ]
     },
     

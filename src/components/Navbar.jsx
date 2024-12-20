@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { AuthContext } from '../context/AuthProvider';
 
 const Navbar = () => {
+    const { user, signOutUser } = useContext(AuthContext);
+
     const navStyle = ({ isActive }) => ({
         color: isActive ? 'white' : 'black',
         //borderRadius: isActive ? '50px' : '0%',
@@ -14,7 +17,7 @@ const Navbar = () => {
     <li><NavLink to={'/interviewers'} style={navStyle} className={'rounded-full lg:min-h-10 py-2'}>Interviewers</NavLink></li>
     </>
     return (
-        <div className="navbar bg-base-100 w-full mx-auto mt-8">
+        <div className="navbar bg-base-100 w-full md:w-11/12 max-w-screen-xl mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-md mr-2 btn-ghost lg:hidden">
@@ -37,7 +40,7 @@ const Navbar = () => {
                         {navItems}
                     </ul>
                 </div>
-                <a className="text-2xl font-semibold">MockTrails</a>
+                <Link to={'/'} className="text-2xl font-semibold">MockTrails</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal py-0 px-0 bg-gray-300 rounded-full space-x-1 *:font-semibold">
@@ -45,7 +48,9 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link to={'/register'} className="btn btn-sm bg-green-500 rounded-full min-h-10">Get Started</Link>
+                {
+                    user?<button onClick={signOutUser} className="btn btn-sm bg-green-500 rounded-full min-h-10">Log Out</button>:<Link to={'/register'} className="btn btn-sm bg-green-500 rounded-full min-h-10">Get Started</Link>
+                }
             </div>
         </div>
     );

@@ -16,6 +16,7 @@ const Mentors = () => {
           See all
         </button>
       </section>
+      
       {/* <section>
         <div class="flex justify-center items-center">
           <div class="grid grid-cols-12 gap-6">

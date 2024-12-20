@@ -1,23 +1,41 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { FcGoogle } from "react-icons/fc";
+import { AuthContext } from '../context/AuthProvider';
 
 const RegisterInterviewee = () => {
+    const navigate = useNavigate();
+    const { createUser } = useContext(AuthContext);
+        const handleSubmit = event =>{
+            event.preventDefault();
+            // const form = event.target;
+            const email = event.target.email.value;
+            const password = event.target.password.value;
+            const fastName = event.target.firstName.value;
+            const lastName = event.target.lastName.value;
+            const user = { email, password, fastName, lastName };
+            createUser(email, password)
+            .then(result => {
+                console.log(result.user);
+                navigate('/dashboard');
+            })
+            .then(err=>console.log(err));
+        }
     return (
         <div className='loginForm text-sm'>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div className="md:flex gap-2">
                     <div className="form-control w-full">
                         <label className="label">
                             <span className="label-text">First Name</span>
                         </label>
-                        <input type="text" name="firstName" className="input input-sm input-bordered" required />
+                        <input type="text" name="firstName" className="input input-sm input-bordered"  />
                     </div>
                     <div className="form-control w-full">
                         <label className="label">
                             <span className="label-text">Last Name</span>
                         </label>
-                        <input type="text" name="lastName" className="input input-sm input-bordered" required />
+                        <input type="text" name="lastName" className="input input-sm input-bordered"  />
                     </div>
                 </div>
                 <div className="md:flex gap-2">
@@ -39,13 +57,13 @@ const RegisterInterviewee = () => {
                         <label className="label">
                             <span className="label-text">Country</span>
                         </label>
-                        <input type="text" name="country" className="input input-sm input-bordered" required />
+                        <input type="text" name="country" className="input input-sm input-bordered"  />
                     </div>
                     <div className="form-control w-full">
                         <label className="label">
                             <span className="label-text">Time Zone</span>
                         </label>
-                        <input type="text" name="timeZone" className="input input-sm input-bordered" required />
+                        <input type="text" name="timeZone" className="input input-sm input-bordered" />
                     </div>
                 </div>
                 <div className="flex items-center pt-5">
@@ -60,9 +78,9 @@ const RegisterInterviewee = () => {
                 </div>
             </form>
             <div>
-                <div class="inline-flex items-center justify-center w-full relative">
-                    <hr class="w-full h-px bg-gray-500 border-0" />
-                    <span class="absolute px-3 font-medium text-gray-900 -translate-x-1/4 bg-white ">OR</span>
+                <div className="inline-flex items-center justify-center w-full relative">
+                    <hr className="w-full h-px bg-gray-500 border-0" />
+                    <span className="absolute px-3 font-medium text-gray-900 -translate-x-1/4 bg-white ">OR</span>
                 </div>
             </div>
             <div className='flex justify-center pt-5 btn-primary '>
