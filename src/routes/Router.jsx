@@ -10,6 +10,7 @@ import OfferingsGrid from "../components/OfferingsGrid";
 import Mentors from "../components/Mentors";
 import Dashboard from "../pages/Dashboard";
 import ProtectedRouter from "./ProtectedRouter";
+import BookSuccess from "../components/BookSuccess";
 
 const Router = createBrowserRouter([
     {
@@ -42,7 +43,11 @@ const Router = createBrowserRouter([
             },
             {
                 path: "/dashboard",
-                element: <ProtectedRouter><Dashboard></Dashboard></ProtectedRouter>
+                element: <Dashboard></Dashboard>
+            },
+            {
+                path:'/booked',
+                element: <BookSuccess></BookSuccess>
             }
         ]
     },
