@@ -4,27 +4,31 @@ import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
     return (
-        <div className='border max-w-screen-xl mx-auto rounded-2xl my-20 shadow-xl'>
-            <div className='grid grid-cols-2  p-10'>
-                <div className=''>
-
+        <div className='w-full md:w-3/4 border max-w-screen-xl mx-auto rounded-2xl my-20 shadow-xl'>
+              <div className='grid grid-cols-2  '>
+                <div className='bg-custom-gradient col-span-1 m-2 rounded-2xl hidden lg:block'>
+                    <div className='hero-content flex-col p-10 text-center text-white'>
+                        <div><img src='src\assets\Logo\Logo-dark.png' className='w-24'></img></div>
+                        <h3 className='text-3xl font-semibold'>Get Started With Us</h3>
+                        <p className='text-sm font-light'>Register now to accelerate your career with our expert mentors</p>
+                    </div>
                 </div>
-                <div className='mx-20'>
+                <div className='col-span-2 p-10 lg:col-span-1 lg:p-10'>
                     <h2 className='text-3xl font-bold text-center'>Sign In</h2>
-                    <p className='text-lg font-semibold text-center py-3'>Enter your email and personal details to create your account</p>
+                    <p className='text-sm md:text-lg font-semibold text-center py-3'>Enter your email and personal details to create your account</p>
                     <div>
                         <form>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="email" name="email" className="input input-bordered" required />
+                                <input type="email" name="email" className="input input-sm input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="password" name="password" className="input input-bordered" required />
+                                <input type="password" name="password" className="input input-sm input-bordered" required />
                             </div>
                             <div className="flex pt-5">
                                 <span className="label-text">Forgot password?</span>
